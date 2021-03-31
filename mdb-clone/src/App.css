@@ -1,0 +1,49 @@
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+p {
+  color: #f0f0f2d0
+}
+
+h3 {
+  color: rgba(33, 115, 236, 0.801);
+}
+
+.movie-app >.row {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+.movie-app >.row::-webkit-scrollbar {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  /* margin: 20px; */
+ }
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
